@@ -2,8 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Day01Test02_Assertions2 {
 
@@ -21,5 +20,6 @@ public class Day01Test02_Assertions2 {
         String [] beklenenDizi={"Test","islemi", "cok","kolay"};
 
         assertTrue(Arrays.equals(beklenenDizi,anlikDizi));
+        //assertEquals(Arrays.toString(beklenenDizi),Arrays.toString(anlikDizi));
     }
 }
