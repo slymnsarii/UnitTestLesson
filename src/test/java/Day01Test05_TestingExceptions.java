@@ -6,10 +6,10 @@ public class Day01Test05_TestingExceptions {
     //test ettigimiz method'un bekledigimiz exception fırlatti mi?
 
     @Test
-    void testException(){
+    void testException(){ //aslinda burda kodda hata olmadigi icin Null atamadi ve testi gecemedi, str=null desek testi gecerdi
         String str="Merhaba Dunya";
-        assertThrows(NullPointerException.class, ()->{//ilk parametre exception parametresi, ikinci parametre lambda yada
-            System.out.println("testException is run");
+        assertThrows(NullPointerException.class, ()->{//ilk parametre exception parametresi(Null atiyorsa), ikinci parametre lambda yada normal kod olabilir
+            System.out.println("testException is run"); //2.parametre hataverirse 1.parametreyi atar
             str.length();
         });
         //bu method testten gecmez

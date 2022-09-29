@@ -13,7 +13,7 @@ public class Day01Test03_BeforeEach_AfterEach {
 
     /*
     beforeEach ile doldurup, afterEach ile bosaltiyorum once before,
-     sonra normal method(test bitene kadar) sonra after
+     sonra normal method(test bitene kadar), sonra after
      */
     String str;
     @BeforeEach
