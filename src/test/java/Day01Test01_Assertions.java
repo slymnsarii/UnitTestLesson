@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class Day01Test01_Assertions {
 
     @Test
-    public void test(){
+    public void test(){//JUnit5'den sonra burda public yazmama gerek kalmadi
         //main method'u yokken nasil calisti?
             //JUnit icerisinde gomulu gelen Main method'u cagriliyor
             //Class bos oldugu icin test gecti
